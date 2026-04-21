@@ -89,8 +89,7 @@ water_l = (user_weight * WATER_PER_KG) / ML_PER_L
 # Вывод отчёта
 print('\n' * 20)
 print("=" * 50)
-print(f'Отчет для пользователя: {user_name} '
-      f'({user_age} {get_year_word(user_age)}.)')
+print(f'Отчет для: {user_name} ({user_age} {get_year_word(user_age)}.)')
 print(f'Твой Индекс Массы Тела: {bmi}')
 print(f'Рекомендуемая норма воды: {water_l:.1f} л в день')
 print()
