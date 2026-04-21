@@ -79,6 +79,7 @@ user_name = get_name()
 user_age = get_age()
 user_weight = get_weight()
 user_height = get_height()
+year_word = get_year_word(user_age)
 
 # Расчёт индекса массы тела
 bmi = round((user_weight / (user_height ** 2)), 1)
@@ -89,7 +90,7 @@ water_l = (user_weight * WATER_PER_KG) / ML_PER_L
 # Вывод отчёта
 print('\n' * 20)
 print("=" * 50)
-print(f'Отчет для: {user_name} ({user_age} {get_year_word(user_age)}.)')
+print(f'Отчет для пользователя: {user_name} ({user_age} {year_word}.)')
 print(f'Твой Индекс Массы Тела: {bmi}')
 print(f'Рекомендуемая норма воды: {water_l:.1f} л в день')
 print()
